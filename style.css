@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "nunitoextralight_italic";
+  src: url("./nunito-italic-variablefont_wght-webfont.woff2") format("woff2"),
+    url("./nunito-italic-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nunito";
+  src: url("./nunito-variablefont_wght-webfont.woff2") format("woff2"),
+    url("./nunito-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, p {
+    margin-bottom: 10px;
+}
+
+:root {
+  --color1: #06b4fb;
+  --color2: #cecfd0;
+  --color3: #383850;
+  --color4: #298cc2;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--color1);
+  font-family: "nunito", sans-serif;
+}
+
+.content {
+  width: 500px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 1rem;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+}
+
+.searchbar-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.searchbar-head img {
+  margin-right: 5px; /* Add some space between the logo and the text */
+}
+
+.searchbar-head div {
+  font-size: 1.2rem; /* Adjust the font size as needed */
+}
+
+.searchbar input {
+  width: 100%; /* Make the input take up all available space */
+  padding: 10px;
+  border: 1px solid var(--color2);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  font-family: "nunito", sans-serif;
+}
+
+.weather-data {
+  padding: 10px;
+  margin: 25px;
+}
+
+.weather-data .main {
+  display: flex;
+}
+
+.weather-data .main .current-condition {
+    width: 50%;
+    display: block;
+    gap: 10px;
+}
+
+.image-update{
+    width: 50%;
+
+}
+.weather-graphic {
+  width: 100%;
+}
+
+.others {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; /* Aligns items vertically center */
+    gap: 8px; /* Optional: adds space between items */
+}
